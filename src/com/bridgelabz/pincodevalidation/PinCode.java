@@ -6,7 +6,7 @@ public class PinCode {
 
 	public static void validatePinCode(String pincode) {
 
-		boolean result = Pattern.matches("[0-9]{6}", pincode);
+		boolean result = Pattern.matches("([0-9]{6})|([0-9]{3} [0-9]{3})", pincode);
 		if(result == true) {
 			System.out.println("Valid Pincode");
 		}
@@ -20,5 +20,6 @@ public class PinCode {
 		validatePinCode("400088");
 		validatePinCode("A400088");
 		validatePinCode("400088B");
+		validatePinCode("400 088");
 	}
 }
