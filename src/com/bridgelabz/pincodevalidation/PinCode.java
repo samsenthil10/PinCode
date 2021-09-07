@@ -19,5 +19,6 @@ public class PinCode {
 
 		validatePinCode("400088");
 		validatePinCode("A400088");
+		validatePinCode("400088B");
 	}
 }
